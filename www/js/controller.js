@@ -39,5 +39,7 @@ angular.module('ideabox')
                 title: 'Votre idée a été soumise avec succès',
                 template: 'Merci de votre aide '
             });
+            $state.go('welcome');
         }
+
     });

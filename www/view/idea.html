@@ -20,20 +20,24 @@
             <input type="text" ng-model="firstname" required />
         </label>
 
-        <p>Votre idée (obligatoire) </p>
-        <label class="item item-input">
-            <input type="text" ng-model="idea" required/>
-        </label>
+
         <br><p>Votre adresse email (obligatoire) </p>
         <label class="item item-input">
             <input type="text" ng-model="email"required />
         </label>
-        <br><br><p>Votre service KeolisCif (obligatoire) </p>
+        <br><p>Votre service KeolisCif (obligatoire) </p>
         <label class="item item-input" required>
             <input type="text" ng-model="service"/>
         </label>
+        </br> <p>Votre idée (obligatoire) </p>
+        <label class="item item-input">
+            <textarea rows="5" cols="30" ng-model="idea" required> </textarea>
+        </label>
         <br>
+
+        <div class="soumettre">
         <button class="button button-positive" ng-click="addIdea() ; showAlert()">Soumettre</button>
+</div>
 
     </form>
 </div>
