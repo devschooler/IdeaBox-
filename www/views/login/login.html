@@ -1,0 +1,31 @@
+<ion-view hide-back-button="true" hide-nav-bar="true">
+  <ion-content class="padding">
+    <div class="list text-center padding">
+      <img class="logo" src="img/rolls.jpg">
+
+      <h1 > BF4L Notes </h1>
+      <h4> Application privée réservée à la BF4L  </h4>
+    </div>
+    <form novalidate name="loginForm" ng-submit="loginForm.$valid && login(user)">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Email:</span>
+          <input name="email" type="email" ng-model="user.email" placeholder="Email" ng-minlength="5" ng-maxlength="30" required>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Mot de passe :</span>
+          <input name="password" type="password" ng-model="user.password" placeholder="Password" ng-minlength="5" ng-maxlength="30" required>
+        </label>
+        <input type="submit" class="button button-block button-positive" value="Connexion" ng-disabled="loginForm.$invalid">
+        <p class="text-center">
+          <a href="#/forgotPassword" class="button button-clear button-dark">Mot de passe oublié ? clique ici négro</a>
+          <h4> Developped by Wesley Isaac </h4>
+        </p>
+      </div>
+    </form>
+    <div class="button-bar">
+
+    </div>
+
+  </ion-content>
+</ion-view>
